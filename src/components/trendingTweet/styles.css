@@ -1,0 +1,15 @@
+.trending-container{
+    margin-left: 0;
+    padding: 10px 0;
+    padding-left: 20px;
+    border-bottom: solid 1px #cacaca;
+}
+
+h4{
+    margin: .1em 0;
+}
+
+span {
+    color: #3e3838;
+    font-size: .8em;
+}

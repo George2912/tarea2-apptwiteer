@@ -1,0 +1,59 @@
+.tweet-container{
+    display: flex;
+    flex-direction: column;
+    width: 101%;
+    padding: 0 1em;
+    margin-left: -19px;
+    border-bottom: solid 1px #cacaca;
+    padding-bottom: 6px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.c1 {
+    flex-basis: 7%;
+}
+
+.c1>img{
+    border-radius: 50%;
+    display: block;
+    width: 100%;
+}
+
+.c2{
+    padding: 0px 15px;
+}
+
+.c2>h6{
+    text-align: left;
+    margin: 5px 0px;
+    font-size: 1.2em;
+}
+
+.row>.content{
+    font-weight: bold;
+    font-size: 1em;
+    text-align: left;
+}
+
+.c4{
+    display: flex;
+    justify-content: space-around;   
+}
+
+.c4 > div {
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.c4 > div > div {
+    display: inline;
+}
+
+.c4 > div > div > svg {
+    height: 15px;
+    color: #5a5252;
+}

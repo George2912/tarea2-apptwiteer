@@ -1,0 +1,66 @@
+.App {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 1fr;
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.t-logo {
+    width: 50%;
+    fill: rgba(29,161,242,1.00);
+}
+
+.t-main {
+    display: flex;
+}
+
+.t-col-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 1.2em;
+    align-items: flex-start;
+    width: 70%;
+}
+
+.t-row {
+    display: flex;
+}
+
+.t-profile-img {
+    width: 50%;
+    justify-self: flex-end;
+}
+
+.t-profile-img > img {
+    border-radius: 50%;
+    display: block;
+    max-width: 100%;
+}
+
+.t-sidebar-col {
+    border-right: solid 1px #cacaca;
+    border-left: solid 1px #cacaca;
+    width: 35%;
+}
+
+.t-sidebar-col > input {
+    border: 1px solid #ecedef;
+    background-color: #ecedef;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    padding: 5px;
+    margin-top: 14px;
+}
+
+.container-trends{
+    width: 80%;
+    background-color: #ecedef;
+    margin-left: 32px;
+    border-radius: 7px;
+    height: auto;
+    padding-bottom: 7px;
+}
