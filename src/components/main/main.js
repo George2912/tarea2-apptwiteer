@@ -6,7 +6,7 @@ const Main = (props) => {
     return (
         <div className="t-main">
             <PrimaryCol profileUrl={props.profileUrl} />
-            <SidebarCol cambiarImagen={props.cambiarImagen} />
+            <SidebarCol />
         </div>
     )
 }

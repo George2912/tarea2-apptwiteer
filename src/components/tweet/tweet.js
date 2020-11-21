@@ -15,7 +15,7 @@ class Tweet extends React.Component{
                         <img src={this.props.profileUrl} alt="profile" />
                     </div>
                     <div className="c2">
-                        <h6>{this.props.profile}</h6>
+                        <h6 >{this.props.profile}</h6>
                         <h6>{this.props.username}</h6>
                     </div>
                     <div className="c3"></div>
@@ -27,9 +27,21 @@ class Tweet extends React.Component{
                 </div>
                 <div className="interaction">
                     <div className="c4">
-                    <div><Icon source= {<ChatOutline />}/>{this.props.comments}</div>
-                    <div><Icon source={<RefreshOutline />} /> {this.props.retweets}</div>
-                    <div><Icon source={<HeartOutline />} />{this.props.likes}</div>
+                    <div className="pointer"><Icon source= {<ChatOutline />}/>
+                    {this.props.comments > 1000
+                        ? this.props.comments / 1000 + "K"
+                        : this.props.comments}
+                    </div>
+                    <div className="pointer" onClick={() => this.props.rtSelected(this.props.index)}><Icon source={<RefreshOutline />} />
+                    {this.props.retweets > 1000
+                        ? this.props.retweets / 1000 + "K"
+                        : this.props.retweets}
+                    </div>
+                    <div className="pointer" onClick={() => this.props.likeSelected(this.props.index)}><Icon source={<HeartOutline />} />
+                    {this.props.likes > 1000
+                        ? this.props.likes / 1000 + "K"
+                        : this.props.likes}
+                    </div>
                     </div>
                 </div>
             </div>
@@ -38,7 +50,3 @@ class Tweet extends React.Component{
 }
 
 export default Tweet;
-
-// https://hipertextual.com/files/2012/06/twitter-bird-white-on-blue.jpg
-//@TwitterSafety
-//Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut risus et enim sodales congue sed ac ante. Maecenas tincidunt tortor vel lorem semper vestibulum. Phasellus placerat arcu ac dui ultricies, sed tempor dolor rhoncus. Cras id leo sem.

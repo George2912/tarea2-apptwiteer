@@ -23,7 +23,7 @@ class Trends extends React.Component {
                 <h3>Que esta pasando</h3>
             <div>
                 {
-                    this.state.trends.map( trend => {
+                    this.state.trends.map( (trend, index) => {
                         return (
                             <TrendingTweet
                                 category={trend.category}

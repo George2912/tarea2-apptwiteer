@@ -6,7 +6,9 @@ const PrimaryCol = (props) => {
     return (
         <div className="t-col-container">
             <h3>Inicio</h3>
-            <PostTweet profileUrl={props.profileUrl} />
+            <PostTweet 
+            profileUrl={props.profileUrl}
+            />
             <Feed />
         </div>
     )

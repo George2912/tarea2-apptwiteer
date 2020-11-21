@@ -57,3 +57,7 @@
     height: 15px;
     color: #5a5252;
 }
+
+.pointer {
+    cursor: pointer;
+}

@@ -52,12 +52,6 @@ const data = [
         category: "Tendencia Mexico",
         tittle: "#FelizViernesATodos",
         noTweets: "14.1 mil tweets",
-    },
-    {
-        
-        category: "Tendencia EE.UU",
-        tittle: "#bidenharis2020",
-        noTweets: "11.4 mil tweets",
     }
 ]
 

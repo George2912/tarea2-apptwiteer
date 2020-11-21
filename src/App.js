@@ -30,15 +30,11 @@ class App extends React.Component {
         }
     }
 
-    cambiarImagen = () => {
-        this.setState({profileUrl: 'https://screenshots.gamebanana.com/img/ico/sprays/nu8_2.png'})
-    }
-
     render() {
         return (
             <div className="App">
                 <Sidebar iconList={this.state.iconArray} profileUrl={this.state.profileUrl} />
-                <Main profileUrl={this.state.profileUrl} cambiarImagen={this.cambiarImagen} />
+                <Main profileUrl={this.state.profileUrl} />
             </div>
         )
     }
